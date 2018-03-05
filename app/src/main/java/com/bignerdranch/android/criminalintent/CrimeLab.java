@@ -25,15 +25,20 @@ public class CrimeLab {
             Crime crime = new Crime();
             if(i==0){
                 crime.setTitle("Fruit salad");
+                crime.setIng1("This is ING1");
             }else if(i==1){
                 crime.setTitle("hamburger");
+                crime.setIng1("This is ING1");
             }else if(i==2){
                 crime.setTitle("pizza");
+                crime.setIng1("This is ING1");
             }else if(i==3){
                 crime.setTitle("BBQ");
+                crime.setIng1("This is ING1");
             }else if(i==4){
                 crime.setTitle("Sandwich");
-                //crime.setIng1("This is ING1");
+                crime.setIng1("This is ING1");
+
             }
 
             crime.setSolved(i==0);

@@ -54,6 +54,19 @@ public class CrimeFragment extends Fragment {
         mIng1 = (TextView) v.findViewById(R.id.ing_jedna);
         mIng1.setText(mCrime.getIng1());
 
+        mIng2 = (TextView) v.findViewById(R.id.ing_dva);
+        mIng2.setText(mCrime.getIng2());
+
+        mIng1 = (TextView) v.findViewById(R.id.ing_jedna);
+        mIng1.setText(mCrime.getIng1());
+
+        mIng1 = (TextView) v.findViewById(R.id.ing_jedna);
+        mIng1.setText(mCrime.getIng1());
+
+        mIng1 = (TextView) v.findViewById(R.id.ing_jedna);
+        mIng1.setText(mCrime.getIng1());
+
+
 
 
         mTitleField.addTextChangedListener(new TextWatcher() {

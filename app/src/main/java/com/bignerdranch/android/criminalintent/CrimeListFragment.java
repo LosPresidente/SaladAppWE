@@ -55,6 +55,7 @@ public class CrimeListFragment extends Fragment {
         private Crime mCrime;
 
         private TextView mTitleTextView;
+        private TextView mIng1TextView;
         //private TextView mDateTextView;
         private ImageView mSolvedImageView;
 
@@ -72,7 +73,7 @@ public class CrimeListFragment extends Fragment {
         public void bind(Crime crime) {
             mCrime = crime;
             mTitleTextView.setText(mCrime.getTitle());
-            mTitleTextView.setText(mCrime.getIng1());
+            //mIng1TextView.setText(mCrime.getIng1());
             //mDateTextView.setText(mCrime.getDate().toString());
             mSolvedImageView.setVisibility(crime.isSolved() ? View.VISIBLE : View.GONE);
         }
