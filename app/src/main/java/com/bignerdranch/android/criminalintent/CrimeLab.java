@@ -21,10 +21,22 @@ public class CrimeLab {
 
     private CrimeLab(Context context) {
         mCrimes = new ArrayList<>();
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 5; i++) {
             Crime crime = new Crime();
-            crime.setTitle("Crime #" + i);
-            crime.setSolved(i % 2 == 0);
+            if(i==0){
+                crime.setTitle("Fruit salad");
+            }else if(i==1){
+                crime.setTitle("hamburger");
+            }else if(i==2){
+                crime.setTitle("pizza");
+            }else if(i==3){
+                crime.setTitle("BBQ");
+            }else if(i==4){
+                crime.setTitle("Sandwich");
+                //crime.setIng1("This is ING1");
+            }
+
+            crime.setSolved(i==0);
             mCrimes.add(crime);
         }
     }

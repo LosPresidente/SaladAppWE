@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:layout_margin="16dp"
               android:orientation="vertical">
@@ -31,33 +32,66 @@
         style="?android:listSeparatorTextViewStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/crime_details_label"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Ingredients"
         android:textStyle="bold"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"
 
         />
 
-    <Button
-        android:id="@+id/crime_date"
+    <TextView
+        android:id="@+id/ing_jedna"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_blue_bright"
-        android:layout_marginRight="16dp"
+        android:text="Apple"
+        android:textColor="@android:color/black"
+        tools:text="Apple"
         android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
 
-        />
-
-    <CheckBox
-        android:id="@+id/crime_solved"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:buttonTint="@color/colorAccent"
-        android:text="@string/crime_solved_label"
-        android:layout_marginRight="16dp"
+        android:text="Banana"
+        android:textColor="@android:color/black"
         android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
 
-        />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Watermelon"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pineapple"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Steps"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="step 1 > step 2 > step3"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
 
 
 </LinearLayout>
